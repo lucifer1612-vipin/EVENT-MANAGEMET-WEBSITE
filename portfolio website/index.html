@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/custom.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/typed.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">PORTFO<span>LIO</span></div>
+
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+
+        <div class="text">
+            <p>Hello,I am</p>
+            <h1>Sneha Mahore</h1>
+            <p>And I am a <span id="ani" style="color: #e74c3c;"></span></p>
+            <button class="c-btn">Hire Me</button>
+        </div>
+
+       
+
+    </header>
+
+    <section id="about">
+        <div class="section-info">
+            <h1>About</h1>
+            <p>Who I am?</p>
+        </div>
+
+        <div class="about-row">
+            <div class="about-left-col">
+                <img src="images/about.jpeg" alt="">
+            </div>
+
+            <div class="about-right-col">
+                <p id="p-tittle">
+                    Hello, I'm Sneha & I'm a <span id="ani2" style="color: #e74c3c;"></span>
+                </p>
+                <p>
+                    hey guys my name is Sneha Mahore i am web devoloper and now i am student in b.tech second year from SRGI i am educated from historical school DON BOSCO SCHOOL i really like programming,coding and web desiegning
+                </p>
+                <button class="c-btn">Download CV</button>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <section id="skills">
+
+        <div class="section-info">
+            <h1 style="color: white;">Skill's</h1>
+            <p>Who I am?</p>
+        </div>
+
+        <div class="skills-row">
+            <div class="skills-left-col">
+               <p>
+                hey guys my name is Sneha Mahore i am web devoloper and now i am student in b.tech second year from SRGI i am educated from historical school called DON BOSCO SCHOOL i really like programming,coding and web desiegning 
+               </p>
+               <button class="c-btn">Read More</button>
+            </div>
+            <div class="skills-right-col">
+                 <div class="progress-div">
+                  <p>
+                    <span>HTML</span><br>
+                    <progress value="90" max="100"></progress>
+                    <span>90%</span>
+                 </p> 
+                 <p>
+                    <span>CSS</span><br>
+                    <progress value="80" max="100"></progress>
+                    <span>80%</span>
+                 </p> 
+                 <p>
+                    <span>JAVASCRIPT</span><br>
+                    <progress value="70" max="100"></progress>
+                    <span>70%</span>
+                 </p> 
+                 <p>
+                    <span>JQUERY</span><br>
+                    <progress value="65" max="100"></progress>
+                    <span>65%</span>
+                 </p>
+                 <p>
+                    <span>BOOSTRAP</span><br>
+                    <progress value="80" max="100"></progress>
+                    <span>80%</span>
+                 </p>    
+                 </div>
+
+            </div>
+            
+</div>
+
+    </section>
+
+
+<section id="sevices">
+    <div class="section-info">
+        <h1>Services</h1>
+        <p>What we provide</p>
+    </div>
+
+    <div class="services-row">
+        <div class="services-box" data-tilt>
+            <img src="images/b2.png" alt="">
+            <h2>Web Design</h2>
+            <p>web desiegning is my proffesional work if you want your own web page then contact us we are provide you cool and classic website with many more features
+            </p>
+        </div>
+
+        <div class="services-box" data-tilt>
+            <img src="images/b2.png" alt="">
+            <h2>Web Devlopment</h2>
+            <p>web desiegning is my proffesional work if you want your own web page then contact us we are provide you cool and classic website with many more features
+            </p>
+        </div>
+
+        <div class="services-box" data-tilt>
+            <img src="images/b2.png" alt="">
+            <h2>Apps Devlopment</h2>
+            <p>web desiegning is my proffesional work if you want your own web page then contact us we are provide you cool and classic website with many more features
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="section-info" style="color: white;">
+        <h1>Get inTouch</h1>
+        <p style="color: black;">we are Available</p>
+    </div>
+    <div class="contact-row">
+        <div class="contact-left-col">
+            <img src="images/b3.png" alt="">
+        </div>
+        <div class="contact-right-col">
+<form>
+    <h2>Connect With Us</h2>
+    <input type="text" name="" placeholder="Name">
+    <input type="email" name="" placeholder="E-mail">
+    <br>
+    <textarea name="" id="" cols="40" rows="10" placeholder="Message"></textarea>
+    <br>
+    <button class="c-btn">Submit</button>   
+</form>
+
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <h2>Devlope by <br>Vipin Bharti</h2>
+    <img src="images/icon.png" width="100" alt="">
+</section>
+
+<script src="js/jquery.ripples-min.js"></script>
+
+<script>
+    jQuery(document).ready(function() {
+        $('header').ripples({
+  dropRadius: 20,
+  perturbance: 0.03,
+});
+    });
+</script>
+
+<script>
+ ani= new Typed('#ani',{
+strings:["Front And Devoloper","Youtuber","Blogger"],
+typespeed:100,
+backspeed:100,
+loop:true,
+    });
+
+
+</script>    
+
+<script>
+    ani= new Typed('#ani2',{
+   strings:["Front And Devoloper","Youtuber","Blogger"],
+   typespeed:100,
+   backspeed:100,
+   loop:true,
+       });
+       </script>
+
+       <script src="js/tilt.jquery.min.js"></script>
+
+
+</body>
+</html>
